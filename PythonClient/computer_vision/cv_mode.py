@@ -8,6 +8,36 @@ import pprint
 import os
 import time
 
+import json
+
+class cameraPose():
+    def __init__(self, x, y, z):
+        self.x = x
+        self.y = y
+        self.z = z
+
+with open('rendering_modeling_v1887_new.json') as file:
+    data = json.load(file)
+
+#Finding out how many vehicles there are in this json
+numvehicles = 0
+
+routes = []
+for vehicle in data:
+    if int(vehicle["id"]) == numvehicles + 1:
+        routes.append([])
+        numvehicles += 1
+    else:
+         break  
+         
+for vehicle in data:
+    pose = cameraPose(float(vehicle["center_coords"]["center_x"]), 
+               float(vehicle["center_coords"]["center_y"]), 
+               float(vehicle["center_coords"]["center_z"]))
+
+    print(int(vehicle["id"]) - 1)
+    routes[int(vehicle["id"]) - 1].append(pose)
+
 pp = pprint.PrettyPrinter(indent=4)
 
 client = airsim.VehicleClient()
@@ -37,10 +67,10 @@ for x in range(3): # do few times
     for i, response in enumerate(responses):
         if response.pixels_as_float:
             print("Type %d, size %d, pos %s" % (response.image_type, len(response.image_data_float), pprint.pformat(response.camera_position)))
-            airsim.write_pfm(os.path.normpath('/temp/cv_mode_' + str(x) + "_" + str(i) + '.pfm'), airsim.get_pfm_array(response))
+            airsim.write_pfm(os.path.normpath('temp/cv_mode_' + str(x) + "_" + str(i) + '.pfm'), airsim.get_pfm_array(response))
         else:
             print("Type %d, size %d, pos %s" % (response.image_type, len(response.image_data_uint8), pprint.pformat(response.camera_position)))
-            airsim.write_file(os.path.normpath('/temp/cv_mode_' + str(x) + "_" + str(i) + '.png'), response.image_data_uint8)
+            airsim.write_file(os.path.normpath('temp/cv_mode_' + str(x) + "_" + str(i) + '.png'), response.image_data_uint8)
 
     pose = client.simGetVehiclePose()
     pp.pprint(pose)
