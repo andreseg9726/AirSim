@@ -1,0 +1,226 @@
+[
+  {
+    "video" : "v1887",
+    "frame" : "97",
+    "id" : "1",
+    "dim_lengths" : {
+      "length" : "3.85","width" : "1.70","height" : "1.50"
+    },
+    "center_coords" : {
+      "center_x" : "3.5022", "center_y" : "0", "center_z" : "-1.9885"
+    },
+    "euler_angles" : {
+      "yaw" : "-62.9964", "pitch" : "-0.141", "roll" : "6.5276"
+    }
+  },
+  {
+    "video" : "v1887",
+    "frame" : "97",
+    "id" : "2",
+    "dim_lengths" : {
+      "length" : "4.2","width" : "1.65","height" : "1.34"
+    },
+    "center_coords" : {
+      "center_x" : "-0.3513", "center_y" : "0", "center_z" : "-1.7284"
+    },
+    "euler_angles" : {
+      "yaw" : "-179.9995", "pitch" : "0", "roll" : "1.2044"
+    }
+  },
+  {
+    "video" : "v1887",
+    "frame" : "101",
+    "id" : "1",
+    "dim_lengths" : {
+      "length" : "3.85","width" : "1.70","height" : "1.50"
+    },
+    "center_coords" : {
+      "center_x" : "3.5611", "center_y" : "0", "center_z" : "-1.9956"
+    },
+    "euler_angles" : {
+      "yaw" : "-68.3974", "pitch" : "-0.6655", "roll" : "4.3546"
+    }
+  },
+  {
+    "video" : "v1887",
+    "frame" : "101",
+    "id" : "2",
+    "dim_lengths" : {
+      "length" : "4.2","width" : "1.65","height" : "1.34"
+    },
+    "center_coords" : {
+      "center_x" : "-0.2118", "center_y" : "0", "center_z" : "-1.5555"
+    },
+    "euler_angles" : {
+      "yaw" : "-179.9995", "pitch" : "0", "roll" : "1.2385"
+    }
+  },
+  {
+    "video" : "v1887",
+    "frame" : "105",
+    "id" : "1",
+    "dim_lengths" : {
+      "length" : "3.85","width" : "1.70","height" : "1.50"
+    },
+    "center_coords" : {
+      "center_x" : "2.9617", "center_y" : "0", "center_z" : "-1.6988"
+    },
+    "euler_angles" : {
+      "yaw" : "-89.9972", "pitch" : "0.5305", "roll" : "-4.8972"
+    }
+  },
+  {
+    "video" : "v1887",
+    "frame" : "105",
+    "id" : "2",
+    "dim_lengths" : {
+      "length" : "4.2","width" : "1.65","height" : "1.34"
+    },
+    "center_coords" : {
+      "center_x" : "-0.2613", "center_y" : "0", "center_z" : "-1.7096"
+    },
+    "euler_angles" : {
+      "yaw" : "-179.9995", "pitch" : "0", "roll" : "2.8116"
+    }
+  },
+  {
+    "video" : "v1887",
+    "frame" : "109",
+    "id" : "1",
+    "dim_lengths" : {
+      "length" : "3.85","width" : "1.70","height" : "1.50"
+    },
+    "center_coords" : {
+      "center_x" : "2.4916", "center_y" : "0", "center_z" : "-1.6747"
+    },
+    "euler_angles" : {
+      "yaw" : "-108.0028", "pitch" : "0.1387", "roll" : "7.7036"
+    }
+  },
+  {
+    "video" : "v1887",
+    "frame" : "109",
+    "id" : "2",
+    "dim_lengths" : {
+      "length" : "4.2","width" : "1.65","height" : "1.34"
+    },
+    "center_coords" : {
+      "center_x" : "-0.2321", "center_y" : "0", "center_z" : "-1.7046"
+    },
+    "euler_angles" : {
+      "yaw" : "-179.9963", "pitch" : "0.0005", "roll" : "2.8022"
+    }
+  },
+  {
+    "video" : "v1887",
+    "frame" : "113",
+    "id" : "1",
+    "dim_lengths" : {
+      "length" : "3.85","width" : "1.70","height" : "1.50"
+    },
+    "center_coords" : {
+      "center_x" : "2.3774", "center_y" : "0", "center_z" : "-1.5979"
+    },
+    "euler_angles" : {
+      "yaw" : "-108.0031", "pitch" : "1.4303", "roll" : "5.5436"
+    }
+  },
+  {
+    "video" : "v1887",
+    "frame" : "113",
+    "id" : "2",
+    "dim_lengths" : {
+      "length" : "4.2","width" : "1.65","height" : "1.34"
+    },
+    "center_coords" : {
+      "center_x" : "-0.2257", "center_y" : "0", "center_z" : "-1.6576"
+    },
+    "euler_angles" : {
+      "yaw" : "-183.603", "pitch" : "0.0875", "roll" : "-0.0026"
+    }
+  },
+  {
+    "video" : "v1887",
+    "frame" : "117",
+    "id" : "1",
+    "dim_lengths" : {
+      "length" : "3.85","width" : "1.70","height" : "1.50"
+    },
+    "center_coords" : {
+      "center_x" : "2.0498", "center_y" : "0", "center_z" : "-1.7142"
+    },
+    "euler_angles" : {
+      "yaw" : "-108.0035", "pitch" : "-0.0026", "roll" : "6.1831"
+    }
+  },
+  {
+    "video" : "v1887",
+    "frame" : "117",
+    "id" : "2",
+    "dim_lengths" : {
+      "length" : "4.2","width" : "1.65","height" : "1.34"
+    },
+    "center_coords" : {
+      "center_x" : "-0.606", "center_y" : "0", "center_z" : "-1.8939"
+    },
+    "euler_angles" : {
+      "yaw" : "-189.002", "pitch" : "0.0026", "roll" : "0.6598"
+    }
+  },
+  {
+    "video" : "v1887",
+    "frame" : "121",
+    "id" : "1",
+    "dim_lengths" : {
+      "length" : "3.85","width" : "1.70","height" : "1.50"
+    },
+    "center_coords" : {
+      "center_x" : "1.9153", "center_y" : "0", "center_z" : "-1.5134"
+    },
+    "euler_angles" : {
+      "yaw" : "-108.0035", "pitch" : "4.0581", "roll" : "4.2711"
+    }
+  },
+  {
+    "video" : "v1887",
+    "frame" : "121",
+    "id" : "2",
+    "dim_lengths" : {
+      "length" : "4.2","width" : "1.65","height" : "1.34"
+    },
+    "center_coords" : {
+      "center_x" : "-0.6586", "center_y" : "0", "center_z" : "-1.7291"
+    },
+    "euler_angles" : {
+      "yaw" : "-189.0031", "pitch" : "0.0026", "roll" : "-0.0026"
+    }
+  },
+  {
+    "video" : "v1887",
+    "frame" : "125",
+    "id" : "1",
+    "dim_lengths" : {
+      "length" : "3.85","width" : "1.70","height" : "1.50"
+    },
+    "center_coords" : {
+      "center_x" : "1.8182", "center_y" : "0", "center_z" : "-1.7737"
+    },
+    "euler_angles" : {
+      "yaw" : "-108.0028", "pitch" : "-0.0026", "roll" : "-0.0026"
+    }
+  },
+  {
+    "video" : "v1887",
+    "frame" : "125",
+    "id" : "2",
+    "dim_lengths" : {
+      "length" : "4.2","width" : "1.65","height" : "1.34"
+    },
+    "center_coords" : {
+      "center_x" : "-0.4479", "center_y" : "0", "center_z" : "-1.686"
+    },
+    "euler_angles" : {
+      "yaw" : "-198.0024", "pitch" : "0.3577", "roll" : "-0.5021"
+    }
+  }
+]
