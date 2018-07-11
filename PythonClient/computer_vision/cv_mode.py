@@ -42,11 +42,11 @@ for vehicle in data:
                float(vehicle["euler_angles"]["pitch"]),
                float(vehicle["euler_angles"]["roll"]))
 
-    print(int(vehicle["id"]) - 1)
+    #print(int(vehicle["id"]) - 1)
     routes[int(vehicle["id"]) - 1].append(pose)
 
 pp = pprint.PrettyPrinter(indent=4)
-
+ 
 client = airsim.VehicleClient()
 client.confirmConnection()
 
@@ -55,9 +55,9 @@ for index, waypoint in enumerate(routes[0]):
     client.simSetVehiclePose(airsim.Pose(airsim.Vector3r(routes[0][index].x, 
                                                          routes[0][index].y, 
                                                          routes[0][index].z), 
-                             airsim.to_quaternion(routes[0][index].yaw, 
-                                                  routes[0][index].pitch, 
-                                                  routes[0][index].roll)), False) 
+                             airsim.to_quaternion(routes[0][index].pitch, 
+                                                  routes[0][index].roll, 
+                                                  routes[0][index].yaw)), False) 
     #print("Yaw: %f, Pitch: %f, Roll: %f" % (routes[0][index].yaw, routes[0][index].pitch, routes[0][index].roll))                                              
     print("Waypoint number: %d" % index)
     pose = client.simGetVehiclePose()
