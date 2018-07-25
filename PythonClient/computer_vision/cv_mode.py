@@ -11,6 +11,11 @@ import time
 import json
 import math
 
+pp = pprint.PrettyPrinter(indent=4)
+ 
+client = airsim.VehicleClient()
+client.confirmConnection()
+
 # Class that keeps the position and orientation of a vehicle, use radians.
 class cameraPose():
     def __init__(self, x, y, z, yaw, pitch, roll):
@@ -22,13 +27,13 @@ class cameraPose():
         self.roll = roll
 
 # Reading from the json file
-with open('rendering_modeling_v1887_new.json') as file:
+filename = input("Enter the name of the JSON file: ")
+with open(filename) as file:
     data = json.load(file)
 
 # Finding out how many vehicles there are in this json and creating an empty 
 # 2D array with that many spaces
 numvehicles = 0
-
 routes = []
 for vehicle in data:
     if int(vehicle["id"]) == numvehicles + 1:
@@ -48,11 +53,6 @@ for vehicle in data:
 
     routes[int(vehicle["id"]) - 1].append(pose)
 
-pp = pprint.PrettyPrinter(indent=4)
- 
-client = airsim.VehicleClient()
-client.confirmConnection()
-
 # This loop will set the camera pose to the ones in the 2D array. Currently 
 # only works for one vehicle
 airsim.wait_key('Press any key to move')
@@ -65,10 +65,10 @@ for index, waypoint in enumerate(routes[0]):
                                                   routes[0][index].yaw)), True) 
     print("Waypoint number: %d" % index)
 
-    # Printing the pose for debugging purposes.
+    # Printing the pose for visualization purposes.
     pose = client.simGetVehiclePose()
     pp.pprint(pose)
-    time.sleep(3)
+    time.sleep(2)
     
 #currently reset() doesn't work in CV mode. Below is the workaround
 client.simSetPose(airsim.Pose(airsim.Vector3r(0, 0, 0), airsim.to_quaternion(0, 0, 0)), True)
