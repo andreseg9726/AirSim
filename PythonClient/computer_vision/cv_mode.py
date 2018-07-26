@@ -27,12 +27,15 @@ class cameraPose():
         self.roll = roll
 
 # Reading from the json file
-filename = input("Enter the name of the JSON file: ")
-with open(filename) as file:
-    data = json.load(file)
+try:
+    filename = input("Enter the name of the JSON file: ")
+    with open(filename) as file:
+        data = json.load(file)
+except IOError:
+    print("No file with that name found in your directory.")
 
 # Finding out how many vehicles there are in this json and creating an empty 
-# 2D array with that many spaces
+# 2D array with that many spaces. Depends on vehicle positions listed in order.
 numvehicles = 0
 routes = []
 for vehicle in data:
